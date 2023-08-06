@@ -24,7 +24,6 @@ Store the extracted data into a Pandas DataFrame.
 
 Some code snippets below which might help: 
 
-
 ```python
 # to authenticate to the api, you will need to use the APCA-API-KEY-ID and APCA-API-SECRET-KEY fields. 
 # for example:
