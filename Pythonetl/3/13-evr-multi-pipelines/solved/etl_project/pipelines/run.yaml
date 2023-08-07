@@ -1,0 +1,20 @@
+poll_seconds: 5
+pipelines:
+  - name: alpaca_markets
+    config: 
+      exchange_codes_path: "./etl_project/data/alpaca_markets/exchange_codes.csv"
+      log_folder_path: "./etl_project/logs"
+      start_date: "2020-01-06"
+      end_date: "2020-01-10"
+      stock_ticker: "TSLA"
+    schedule:
+      run_seconds: 5
+
+  - name: weather
+    config: 
+      city_reference_path: "./etl_project/data/weather/australian_capital_cities.csv"
+      population_reference_path: "./etl_project/data/weather/australian_city_population.csv"
+      log_folder_path: "./etl_project/logs"
+    schedule:
+      run_seconds: 8
+
